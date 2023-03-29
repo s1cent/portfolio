@@ -1,0 +1,15 @@
+.parent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 25px;
+}
+
+.div2 {
+  text-align: center;}
+
+.footerIcon {
+  color: white;
+
+}

@@ -1,0 +1,176 @@
+
+.textContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-left: 30px;
+}
+
+.headline{
+
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+
+  /* white */
+  position: relative;
+  color: #FFFFFF;
+}
+
+.subline {
+
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+
+  /* or 156% */
+
+  /* gray */
+  color: #ABB2BF;
+}
+
+.contactBox {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+
+
+  /* primary */
+  border: 1px solid #C778DD;
+}
+
+.contactText {
+  height: 21px;
+
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 0;
+  /* identical to box height */
+
+  /* white */
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.img {
+  grid-area: 1 / 5 / 5 / 7;
+}
+
+
+.underPic{
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+
+  position: absolute;
+  width: 402px;
+  height: 37px;
+  top: 296px;
+  background: #282C33;
+
+  /* gray */
+  border: 1px solid #ABB2BF;
+}
+
+.insideText{
+  color: #ABB2BF;
+  margin: auto;
+  width: 288px;
+  height: 21px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.inpic{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  gap: 10px;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ABB2BF;
+  right: 22px;
+  top: 100px;
+}
+.containerNew {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+.quoteContainer{
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  gap: 10px;
+  isolation: isolate;
+  height: 95px;
+  margin: 0 20%;
+  /* background */
+  background: #282C33;
+  position: relative;
+
+  /* gray */
+  border: 1px solid #ABB2BF;
+
+  margin-bottom: 50px;
+}
+.author{
+  /* Frame 49 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 10px;
+
+  width: 162px;
+  height: 63px;
+  position: absolute;
+  /* gray */
+  border: 1px solid #ABB2BF;
+
+
+  right: 0;
+  top: 93px;
+}
+
+.textLine {
+  grid-area: 1 / 1 / 5 / 5;
+}
