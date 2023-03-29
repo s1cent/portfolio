@@ -1,0 +1,12 @@
+.image{
+  position: relative;
+  background: #282c2d;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section.content {
+  flex: 1;
+}
