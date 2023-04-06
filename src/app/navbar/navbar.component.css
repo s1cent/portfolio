@@ -61,3 +61,27 @@
   order: 0;
   flex-grow: 0;
 }
+
+.button{
+  border: 1px solid #C778DD;
+  box-shadow: #C778DD;
+}
+
+@media all and (max-width: 991px){
+  .hiddenMenu{
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
+  overflow: hidden;
+    text-align: center;
+  }
+
+
+.showMenu{
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+}
+
+.showMenu .nav-item .nav-link{
+  text-align: center;
+}
+}

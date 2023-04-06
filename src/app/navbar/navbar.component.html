@@ -1,31 +1,12 @@
-<!--<div class=" container-fluid">-->
-<!--  <div class="name">-->
-<!--    <button type="button" class="btn btn-primary-outline">-->
-<!--      <p class="text">Raphael</p>-->
-<!--    </button>-->
-
-<!--  </div>-->
-<!--  <div class="rightSide">-->
-<!--    <button type="button" class="btn btn-primary-outline flexing">-->
-<!--      <div class="text hash hashText">#</div>-->
-<!--      <div class="text aboutMe">about me</div>-->
-<!--    </button>-->
-<!--    <button type="button" class="btn btn-primary-outline flexing">-->
-<!--      <div class="text hash hashText">#</div>-->
-<!--      <div class="text aboutMe">projects</div>-->
-<!--    </button>-->
-<!--    <button type="button" class="btn btn-primary-outline flexing">-->
-<!--      <div class="text hash hashText">#</div>-->
-<!--      <div class="text aboutMe">resume</div>-->
-<!--    </button>-->
-
-<!--  </div>-->
-<!--</div>-->
-
-<nav class="navbar nave navbar-expand-lg">
+<nav class="navbar  nave navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand text" href="#">Raphael</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <button class="navbar-toggler button" type="button">
+      <span role="button" (click)="useMenu()">
+        <i class="fa-solid fa-bars" style="color: white"></i>
+      </span>
+    </button>
+    <div class="navbar-collapse hiddenMenu" id="mynavbar" #menu>
       <ul class="navbar-nav  ms-lg-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">

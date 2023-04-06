@@ -77,22 +77,19 @@
 
 
 .underPic{
-
   box-sizing: border-box;
-
   /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 8px;
   gap: 10px;
-
-  position: absolute;
+  position: relative;
   width: 402px;
   height: 37px;
-  top: 296px;
+  bottom: 106px;
   background: #282C33;
-
+  margin: auto;
   /* gray */
   border: 1px solid #ABB2BF;
 }
@@ -129,26 +126,71 @@
   color: white;
 
 }
-.quoteContainer{
-  box-sizing: border-box;
 
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 32px;
-  gap: 10px;
-  isolation: isolate;
-  height: 95px;
-  margin: 0 20%;
-  /* background */
-  background: #282C33;
-  position: relative;
+@media all and (max-width: 1200px)  {
+  .quoteContainer{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 10px;
+    isolation: isolate;
+    height: 95px;
+    /* background */
+    background: #282C33;
+    position: relative;
+    /* gray */
+    border: 1px solid #ABB2BF;
+    margin-bottom: 50px;
+  }
 
-  /* gray */
-  border: 1px solid #ABB2BF;
+  .sizing {
+    margin: auto;
+    font-size: 18px
+  }
+  .addingMargin {
+    margin-top: 80px;
+  }
+}
 
-  margin-bottom: 50px;
+@media all and (min-width: 1200px)  {
+  .quoteContainer{
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 32px;
+    gap: 10px;
+    isolation: isolate;
+    height: 95px;
+    /* background */
+    background: #282C33;
+    position: relative;
+    /* gray */
+    border: 1px solid #ABB2BF;
+    margin: 0 20% 50px;
+  }
+  .sizing {
+    margin: auto;
+    font-size: 26px
+  }
+
+  .typed-out{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation: typing;
+    animation-duration: 2s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+    height: 30px;
+    border-right: .15em solid #ABB2BF;
+
+  }
 }
 .author{
   /* Frame 49 */
@@ -160,7 +202,6 @@
   padding: 16px;
   gap: 10px;
 
-  width: 162px;
   height: 63px;
   position: absolute;
   /* gray */
@@ -173,4 +214,11 @@
 
 .textLine {
   grid-area: 1 / 1 / 5 / 5;
+}
+
+
+
+@keyframes typing {
+  0% { max-width: 0 }
+  100% { max-width: 40ch }
 }
